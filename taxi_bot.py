@@ -5,12 +5,12 @@ from twilio.rest import Client
 app = Flask(__name__)
 
 # Twilio credentials
-account_sid = 'your_account_sid'
-auth_token = 'your_auth_token'
+account_sid = 'AC84ef9e21ea9b9025f1ab1ad72f2deac3'
+auth_token = '75e99a840f4fc4fb49871e555d42e612'
 client = Client(account_sid, auth_token)
 
 # WhatsApp group ID for drivers
-drivers_group_id = 'whatsapp:+1234567890'
+drivers_group_id = 'whatsapp:B6PiB1rXn39KttBjant8I7'
 
 @app.route('/whatsapp', methods=['POST'])
 def whatsapp():
